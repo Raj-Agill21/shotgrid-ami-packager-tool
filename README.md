@@ -35,7 +35,7 @@ Right-click on one or more Shots in ShotGrid → Launch a local tool via `packag
 
 ## 🚀 Setup Instructions
 ## ✅ 1. Clone the Repository
-
+```bash
 git clone https://github.com/yourusername/shotgrid-ami-packager-tool.git
 cd shotgrid-ami-packager-tool
 
@@ -45,7 +45,7 @@ Edit the register_packages.reg file:
 Update the path to launcher.bat (absolute path, double backslashes)
 
 Example:
-
+```reg
 @="\"C:\\\\Users\\\\yourname\\\\shotgrid-ami-packager-tool\\\\launcher.bat\" \"%1\""
 Save and double-click the .reg file to add the protocol to the registry.
 
