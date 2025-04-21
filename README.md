@@ -60,6 +60,7 @@ sg = Shotgun(
 )
 ```
 base_url → your studio’s ShotGrid site URL
+
 script_name and api_key → credentials from ShotGrid Admin → Scripts
 
 ## 🛠️ 4. Configure the Action Menu Item (AMI)
@@ -72,9 +73,13 @@ In ShotGrid Web UI:
 3. Set the following values:
 
 Field	Value
+
 Title	Package Selected Shots
+
 Entity Type	Shot
+
 Multi-Entity	✅ Enabled
+
 URL	packager://#{id}
 
 4. Save it.
