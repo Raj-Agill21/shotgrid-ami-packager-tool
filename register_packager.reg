@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\packager]
+@="URL:Packager Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\packager\shell]
+
+[HKEY_CLASSES_ROOT\packager\shell\open]
+
+[HKEY_CLASSES_ROOT\packager\shell\open\command]
+@="\"C:\\Shotgrid_scripts\\shotgrid_ami_packager\\launcher.bat\" \"%1\""
