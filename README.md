@@ -46,19 +46,19 @@ Edit the register_packages.reg file:
 Update the path to launcher.bat (absolute path, double backslashes)
 
 Example:
-```reg
+```bash
 @="\"C:\\\\Users\\\\yourname\\\\shotgrid-ami-packager-tool\\\\launcher.bat\" \"%1\""
 Save and double-click the .reg file to add the protocol to the registry.
-
+```
 ## 🧷 3. Customize ShotGrid Script Credentials
 Open packager.py and modify the following with your studio’s credentials:
-
+```bash
 sg = Shotgun(
     base_url="https://yourstudio.shotgrid.autodesk.com",
     script_name="your_script_name",
     api_key="your_script_key"
 )
-
+```
 base_url → your studio’s ShotGrid site URL
 script_name and api_key → credentials from ShotGrid Admin → Scripts
 
