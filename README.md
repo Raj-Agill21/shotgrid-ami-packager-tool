@@ -35,10 +35,11 @@ Right-click on one or more Shots in ShotGrid → Launch a local tool via `packag
 
 ## 🚀 Setup Instructions
 ## ✅ 1. Clone the Repository
+
 ```bash
 git clone https://github.com/yourusername/shotgrid-ami-packager-tool.git
 cd shotgrid-ami-packager-tool
-
+```
 ## 🔧 2. Register the packager:// Protocol
 Edit the register_packages.reg file:
 
