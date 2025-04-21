@@ -6,16 +6,12 @@ A customization for Autodesk Flow Production Tracking (ShotGrid) using an Action
 
 Right-click on one or more Shots in ShotGrid → Launch a local tool via `packager://` → Select a destination folder via UI → Automatically fetch & zip latest published files (Model, Rig, Texture, Anim).
 
----
-
 ## 🛠️ Features
 
 - Triggered via AMI and a custom Windows protocol (`packager://`)
 - PySide-based UI to choose the destination folder once
 - Fetches latest published files from all relevant tasks
 - Creates zip files per shot in the selected folder
-
----
 
 ## 📂 Files Included
 
@@ -37,13 +33,13 @@ Right-click on one or more Shots in ShotGrid → Launch a local tool via `packag
   ```bash
   pip install PySide2
 
-##🚀 Setup Instructions
-##✅ 1. Clone the Repository
+## 🚀 Setup Instructions
+## ✅ 1. Clone the Repository
 
 git clone https://github.com/yourusername/shotgrid-ami-packager-tool.git
 cd shotgrid-ami-packager-tool
 
-##🔧 2. Register the packager:// Protocol
+## 🔧 2. Register the packager:// Protocol
 Edit the register_packages.reg file:
 
 Update the path to launcher.bat (absolute path, double backslashes)
@@ -53,7 +49,7 @@ Example:
 @="\"C:\\\\Users\\\\yourname\\\\shotgrid-ami-packager-tool\\\\launcher.bat\" \"%1\""
 Save and double-click the .reg file to add the protocol to the registry.
 
-##🧷 3. Customize ShotGrid Script Credentials
+## 🧷 3. Customize ShotGrid Script Credentials
 Open packager.py and modify the following with your studio’s credentials:
 
 sg = Shotgun(
@@ -65,7 +61,7 @@ sg = Shotgun(
 base_url → your studio’s ShotGrid site URL
 script_name and api_key → credentials from ShotGrid Admin → Scripts
 
-##🛠️ 4. Configure the Action Menu Item (AMI)
+## 🛠️ 4. Configure the Action Menu Item (AMI)
 In ShotGrid Web UI:
 
 1. Go to Admin Menu → Site Preferences → Action Menu Items
@@ -82,7 +78,7 @@ URL	packager://#{id}
 
 4. Save it.
 
-##🧪 5. Test the Tool
+## 🧪 5. Test the Tool
 1. Open ShotGrid and select one or more Shots.
 
 2. Right-click → Choose “Package Selected Shots” (your AMI).
@@ -93,7 +89,7 @@ URL	packager://#{id}
 
 5. Zipped files are saved to the selected location — one zip per shot.
 
-##⚠️ Notes
+## ⚠️ Notes
  - Works only on Windows (due to .bat + registry)
 
  - ShotGrid must have published files under proper task types
