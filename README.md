@@ -72,15 +72,15 @@ In ShotGrid Web UI:
 
 3. Set the following values:
 
-Field	Value
-
-Title	Package Selected Shots
-
-Entity Type	Shot
-
-Multi-Entity	✅ Enabled
-
-URL	packager://#{id}
+    Field	Value
+    
+    Title	Package Selected Shots
+    
+    Entity Type	Shot
+    
+    Multi-Entity	✅ Enabled
+    
+    URL	packager://#{id}
 
 4. Save it.
 
